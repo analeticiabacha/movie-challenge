@@ -1,7 +1,7 @@
 # PRINCINEMA 🎥
 
 Sexto projeto desenvolvido para o bootcamp da [@Laboratória](https://www.laboratoria.la/br). O objetivo do Movie Challenge é reunir dados de uma API, através de React, possibilitando aos usuários 
-a interação com diversos filmes e séries. Através do acesso a [@API](https://developer.themoviedb.org/reference/discover-tv), a aplicação exibirá detalhes dos filmes como título, sinopse e diretores.
+a interação com diversos filmes e séries. Através do acesso a [API](https://developer.themoviedb.org/reference/discover-tv), a aplicação exibirá detalhes dos filmes como título, sinopse e diretores.
 
 A ideia de tema para o projeto "Princinema" surgiu através da junção do sobrenome da desenvolvedora e do tema Cinema ❤️
  
