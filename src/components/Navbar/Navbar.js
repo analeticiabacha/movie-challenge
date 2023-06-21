@@ -12,7 +12,6 @@ const Navbar = () => {
                 <InfosDivHeader> ORDENAR </InfosDivHeader>
                 <InfosDivHeader> GÊNERO </InfosDivHeader>
                 <InfosDivHeader> TIPO </InfosDivHeader>
-                <InfosDivHeader> IDIOMA </InfosDivHeader>
            </Titles>
            <DivSearch>
                 <i class="bi bi-search"></i>

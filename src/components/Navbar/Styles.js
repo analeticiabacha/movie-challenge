@@ -12,7 +12,14 @@ export const Header = styled.header`
 
 export const Logo = styled.img`
     width: 320px;
-    
+
+    @media (max-width: 700px){
+        width: 130px;
+    }
+    @media (max-width: 450px){
+        display: none;
+        
+    }
 `;
 
 export const Titles = styled.div`
@@ -24,6 +31,19 @@ export const Titles = styled.div`
     gap: 90px;
     font-size: 25px;
     margin-right: 150px;
+
+    @media (max-width: 450px){
+        gap: 10px;
+        margin-right: 10px;
+        width: 100vw ;
+        
+    }
+
+    @media (max-width: 890px){
+        gap: 30px;
+        margin-right: 50px;
+        font-size: 15px;
+    }
 `;
 
 export const InfosDivHeader = styled.p`
@@ -36,4 +56,13 @@ export const DivSearch = styled.div`
     font-size: 45px;
     display: flex;
     align-items: center;
+
+    @media (max-width: 370px){
+        width: 50px;
+        font-size: 20px;
+    }
+    @media (max-width: 450px){
+        font-size: 20px;
+        
+    }
 `;

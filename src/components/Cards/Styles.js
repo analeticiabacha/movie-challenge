@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContainerCard = styled.div`
   background-color: #4B003A;
-  width: 330px;
-  height: 460px;
+  min-width: 230px;
+  height: 360px;
   border-radius: 20px;
   
 `;
