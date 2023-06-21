@@ -1,9 +1,21 @@
 import React from "react";
-import { Container, DivCrown, DivLogin, H3, Main, ImgCrown, Logo, DivInfos } from "./Style";
+import { useNavigate } from "react-router-dom";
+import { Container, DivCrown, DivLogin, Main, ImgCrown, Logo, DivInfos } from "./Style";
 import LogoCrown from "../../img/LogoCrown.png";
 import LogoPink from "../../img/pinkLogo.png";
+import Button from "../../components/Button/Button";
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    function changeToHomeScreen() {
+        navigate('/HomePrincinema');
+    } 
+
+    function changeToAboutAuthor() {
+        navigate('/AboutAuthor');
+    } 
 
     return(
         <Container>
@@ -14,8 +26,8 @@ const Login = () => {
                 <DivLogin>
                     <Logo src={LogoPink}/>
                     <DivInfos>
-                        <H3>ENTRAR</H3>
-                        <H3>ABOUT AUTHOR</H3>
+                        <Button onClick={changeToHomeScreen}>ENTRAR</Button>
+                        <Button onClick={changeToAboutAuthor}>ABOUT AUTHOR</Button>
                     </DivInfos>
                 </DivLogin>
             </Main>

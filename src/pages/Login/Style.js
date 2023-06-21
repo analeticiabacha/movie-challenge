@@ -33,13 +33,9 @@ export const DivLogin = styled.div`
 export const DivInfos = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 80px
+    gap: 40px
 `;
 
-
-export const H3 = styled.h3`
-    color: #F7BDE3;
-`;
 
 export const ImgCrown = styled.img`
     width: 100%;
