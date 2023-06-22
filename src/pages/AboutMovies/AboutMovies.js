@@ -1,13 +1,19 @@
 import React from "react";
 import { Container } from "./Styles";
+import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
 
 const AboutMovies = () => {
 
-    return (
-        <Container>
+  const navigate = useNavigate();
 
-        </Container>
-    ) 
+  return (
+   <Container>
+    <Button onClick={() => navigate(`/HomePrincinema`)}>
+        VOLTAR
+    </Button>
+   </Container>
+  );
 
-}
- export default AboutMovies;
+};
+export default AboutMovies;
