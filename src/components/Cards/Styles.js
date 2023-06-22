@@ -5,10 +5,18 @@ export const ContainerCard = styled.div`
   min-width: 230px;
   height: 360px;
   border-radius: 20px;
-  
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 `;
 
 export const InfoCard = styled.p`
-    color: black;
-    font-size: 50px;
+  color: black;
+  font-size: 20px;
+`;
+
+export const StarIcon = styled.p`
+  color: white;
 `;

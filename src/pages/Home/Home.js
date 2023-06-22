@@ -10,13 +10,18 @@ import Left from "../../img/left.png";
 //UseEffect: usamos pra chamar a api quando a pagina carregar
 
 const Home = () => {
-    
   const [topMovies, setTopMovies] = useState([]);
   const carousel = useRef(null);
 
   useEffect(() => {
-    const topRatedUrl = `${APIUrl}top_rated?${APIKey}`;
-    getMovies(topRatedUrl);
+    const topRatedUrl = `${APIUrl}top_rated?api_key=${APIKey}`;
+    // getMovies(topRatedUrl)
+    const findTopMovies = async () => {
+      const movies = await getMovies(topRatedUrl);
+      setTopMovies(movies);
+    };
+
+    findTopMovies();
   }, []);
 
   //a função é executada cada vez q algo do arr é mudado
@@ -37,13 +42,10 @@ const Home = () => {
       <Navbar></Navbar>
       <Container>
         <DivCard ref={carousel}>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
+          {topMovies.length === 0 && <p>Carregando...</p>}
+          {topMovies.length > 0 && topMovies.map((movie) => (
+            <Cards key={movie.id} movie={movie}/>
+          ))}
         </DivCard>
         <DivIcons>
           <ButtonRightLeft onClick={handleLeftClick}>

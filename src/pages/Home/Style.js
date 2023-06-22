@@ -10,19 +10,21 @@ export const Container = styled.div`
     width: 100vw;
     min-height: calc(100vh - 100px);
     overflow: hidden;
+    
 `;
 
 export const DivCard = styled.div`
     margin-top: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 500px;
     gap: 10px;
-    width: 90vw;
+    width: 100vw;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     overflow-x: auto;
     scroll-behavior: smooth;
    
-    
 `;
 
 export const DivIcons = styled.div`
