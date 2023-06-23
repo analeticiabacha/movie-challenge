@@ -51,7 +51,7 @@ export const InfosDivHeader = styled.p`
 `;
 
 export const DivSearch = styled.div`
-    width: 100px;
+    width: 300px;
     color: #BD007D;
     font-size: 45px;
     display: flex;
@@ -64,5 +64,35 @@ export const DivSearch = styled.div`
     @media (max-width: 450px){
         font-size: 20px;
         
+    }
+
+`;
+
+export const Typed = styled.input`
+    padding: .2rem .8rem;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    height: 30px;
+    background-color: black ;
+    color: white
+`;
+
+export const ButtonInput = styled.button`
+    background-color: #BD007D;
+    border: 2px solid #BD007D;
+    border-radius: 0 4px 4px 0;
+    color: black;
+    padding: .3rem;
+    font-size: 1.3rem;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        opacity: 0.3;
     }
 `;
