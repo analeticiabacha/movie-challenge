@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: black;
-    height: 100vh;
+    /* background-color: black;
+    min-height: 100vh; */
+    background-color: #020003;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100vw;
+    min-height: calc(100vh - 100px);
+    overflow: hidden;
 `;
 
 export const DivCard = styled.div`
     margin-top: 80px;
     display: flex;
-    height: 500px;
+    height: 600px;
     gap: 10px;
     width: 100vw;
     &::-webkit-scrollbar{
@@ -29,3 +38,8 @@ export const ButtonRightLeft = styled.button`
     border: none;
     cursor: pointer;
 `;
+
+export const Results = styled.p`
+    color: white;
+`;
+

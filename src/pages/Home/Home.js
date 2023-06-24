@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Container, DivCard, DivIcons, ButtonRightLeft } from "./Style";
 import Cards from "../../components/Cards/Cards";
-import { APIKey, APIUrl, APISearch } from "../../API/Config/key";
+import { APIKey, APIUrl } from "../../API/Config/key";
 import { getMovies } from "../../API/Api";
 import Right from "../../img/right.png";
 import Left from "../../img/left.png";
@@ -37,6 +37,8 @@ const Home = () => {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
+
+  
   return (
     <>
       <Navbar></Navbar>

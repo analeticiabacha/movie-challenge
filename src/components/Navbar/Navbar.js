@@ -4,16 +4,18 @@ import {
   Header,
   Logo,
   Titles,
-  InfosDivHeader,
+  ButtonTwo,
   DivSearch,
   Typed,
   ButtonInput,
+  SelectButton,
 } from "./Styles";
 import PinkLogo from "../../img/pinkLogo.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [search, setSearch] = useState("");
+  const [orderBy, setOrderBy] = useState("");
   const navigate = useNavigate();
 
   const searchTyped = () => {
@@ -25,13 +27,25 @@ const Navbar = () => {
     setSearch("")
   }
 
+  const handleSelectChange = (e) => {
+    const selectedValue = e.target.value; //valor selecionado pelo usuário
+    setOrderBy(selectedValue); //atuliza o estado c o valor 
+    console.log(selectedValue);
+
+  };
+
+
   return (
-    <Header>
+    <Header >
       <Logo src={PinkLogo}></Logo>
       <Titles>
-        <InfosDivHeader> ORDENAR </InfosDivHeader>
-        <InfosDivHeader> GÊNERO </InfosDivHeader>
-        <InfosDivHeader> TIPO </InfosDivHeader>
+        <SelectButton value={orderBy} onChange={handleSelectChange}>
+          <option disabled selected hidden> ORDENAR POR </option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </SelectButton>
+        <ButtonTwo hide={props.hideInfosDiv}> GÊNERO </ButtonTwo>
+        <ButtonTwo hide={props.hideInfosDiv}> TIPO </ButtonTwo>
       </Titles>
       <DivSearch>
         <Typed
