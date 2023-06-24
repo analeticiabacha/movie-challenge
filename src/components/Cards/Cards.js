@@ -13,7 +13,7 @@ const Cards = ({ movie, showLink = true }) => {
       <StarIcon>
         <i class="bi bi-star-fill"></i> {movie.vote_average}
       </StarIcon>
-      <Button onClick={() => navigate(`/movie/${movie.id}`)}>Detalhes</Button>
+      {showLink && <Button onClick={() => navigate(`/movie/${movie.id}`)}>Detalhes</Button>}
     </ContainerCard>
   );
 };

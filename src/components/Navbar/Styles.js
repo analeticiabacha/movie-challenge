@@ -48,6 +48,7 @@ export const Titles = styled.div`
 
 export const InfosDivHeader = styled.p`
     color: #F7BDE3;
+    display: ${(props) => (props.hide ? 'none' : 'block')};
 `;
 
 export const DivSearch = styled.div`
@@ -74,7 +75,22 @@ export const Typed = styled.input`
     border: none;
     height: 30px;
     background-color: black ;
-    color: white
+    color: white;
+`;
+
+export const ButtonTwo = styled.button`
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    &:hover{
+        background-color: #BD007D;
+        opacity: 0.8;
+        color: black;
+    }
 `;
 
 export const ButtonInput = styled.button`
@@ -91,6 +107,22 @@ export const ButtonInput = styled.button`
 
     &:hover{
         opacity: 0.8;
+    }
+    &:active{
+        opacity: 0.3;
+    }
+`;
+
+export const SelectButton = styled.select`
+    width: 150px;
+    height: 40px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    &:hover{
+        background-color: #BD007D;
+        color: black;
     }
     &:active{
         opacity: 0.3;
