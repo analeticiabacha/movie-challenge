@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Header,
   Logo,
   Titles,
-  ButtonTwo,
   DivSearch,
   Typed,
   ButtonInput,
   SelectButton,
 } from "./Styles";
 import PinkLogo from "../../img/pinkLogo.png";
+import OrderContext from "../../context/OrderContext";
 
 const Navbar = (props) => {
 
   const [search, setSearch] = useState("");
-  const [orderBy, setOrderBy] = useState("");
+  const {orderMovies, alterOrder} = useContext(OrderContext);
   const navigate = useNavigate();
 
   const searchTyped = () => {
@@ -29,23 +29,20 @@ const Navbar = (props) => {
 
   const handleSelectChange = (e) => {
     const selectedValue = e.target.value; //valor selecionado pelo usuário
-    setOrderBy(selectedValue); //atuliza o estado c o valor 
-    console.log(selectedValue);
-
+    alterOrder(selectedValue);
   };
 
+  console.log(orderMovies);
 
   return (
     <Header >
       <Logo src={PinkLogo}></Logo>
       <Titles>
-        <SelectButton value={orderBy} onChange={handleSelectChange}>
+        <SelectButton onChange={handleSelectChange}>
           <option disabled selected hidden> ORDENAR POR </option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
         </SelectButton>
-        <ButtonTwo hide={props.hideInfosDiv}> GÊNERO </ButtonTwo>
-        <ButtonTwo hide={props.hideInfosDiv}> TIPO </ButtonTwo>
       </Titles>
       <DivSearch>
         <Typed

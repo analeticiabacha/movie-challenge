@@ -27,7 +27,6 @@ const AboutMovies = () => {
     })
   }
 
-
   useEffect(() => {
     const movieURL = `${APIUrl}${id}?api_key=${APIKey}&language=pt-BR`;
     const findTopMovies = async () => {
