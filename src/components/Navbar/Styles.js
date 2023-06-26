@@ -78,21 +78,6 @@ export const Typed = styled.input`
     color: white;
 `;
 
-export const ButtonTwo = styled.button`
-    border: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    &:hover{
-        background-color: #BD007D;
-        opacity: 0.8;
-        color: black;
-    }
-`;
-
 export const ButtonInput = styled.button`
     background-color: #BD007D;
     border: 2px solid #BD007D;
