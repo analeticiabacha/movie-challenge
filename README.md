@@ -36,7 +36,7 @@ A ideia de tema para o projeto "Princinema" surgiu através da junção do sobre
 ### Histórias de Usuários
 
 <div align="center" flwx-direction="row">
- <img alt="Home" width="500" src="https://github.com/analeticiabacha/movie-challenge/assets/30864314/5fa371c9-7194-406f-9c98-834c56801a90" />
+ <img alt="Home" width="500" src="https://github.com/analeticiabacha/movie-challenge/assets/30864314/153e56c3-c425-4f2e-80ab-b3f8d0631d9e" />
 </div>
 
 ***
@@ -52,7 +52,11 @@ A ideia de tema para o projeto "Princinema" surgiu através da junção do sobre
 
 <div align="center" flwx-direction="row">
  <img alt="Pesquisa" width="500" src="https://github.com/analeticiabacha/movie-challenge/assets/30864314/b25f1174-482a-4185-9025-e49c4284cb62" />
-
 </div>
+
 ***
-🚧 EM CONSTRUÇÃO 🚧
+### Detalhe dos Filmes
+
+<div align="center" flwx-direction="row">
+ <img alt="Pesquisa" width="500" src="https://github.com/analeticiabacha/movie-challenge/assets/30864314/3ecc5df4-0e8e-461b-b0e1-7bb2dc7bd788" />
+</div>
